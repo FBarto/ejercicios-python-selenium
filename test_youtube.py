@@ -33,7 +33,7 @@ class UsingUnittest(unittest.TestCase):
         #encontrarElement = driver.find_element(By.CSS_SELECTOR, "input#search") #Busca tal cual como escribimos con mayus y espacios.
         encontrarElement.send_keys("paren la mano")
         encontrarElement.send_keys(Keys.ENTER)
-        time.sleep(3)
+        #time.sleep(3)
 
 if __name__ == '__main__':
     unittest.main()
