@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Alert Simple</title>
+    </head>
+    <body>
+        <p>Click en el boton del alert</p>
+        <button name="alert" onclick="myFunction()">Alerta 1</button>
+        <button name="alertconfirm" onclick="myFunction2()">Alerta 2</button>
+        <button name="promptconfirm" onclick="myFunction3()">Alerta 3</button>
+        <p id="demostracion"></pid></p>
+        <script>
+            function myFunction(){
+                alert("Hola soy muna caja de alerta simple")
+            }
+            function myFunction2(){
+                confirm("Presiona el boton");
+            }
+            function myFunction3(){
+                var text;
+                var usuario = prompt("Porfavor ingresa tu nombre ", "Aqui va tu nombre");
+                if (usuario == null || usuario=="" ){
+                    text = "usuario a coancelado el ingreso de datos.";}
+
+                else{
+                    text = "Hola " + usuario + " Bienvenido!!";
+                }
+                document.getElementById("demostracion").innerHTML = text;
+            }
+        </script>
+    </body>
+</html>
